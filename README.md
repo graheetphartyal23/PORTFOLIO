@@ -1,4 +1,3 @@
-Here’s a concise and professional README file for your portfolio:  
 
 ---
 
@@ -25,13 +24,7 @@ Welcome to my personal portfolio! This project showcases my skills, experience, 
 - **Resume** – My experience and education.  
 - **Contact** – Get in touch with me.  
 
-## 📌 How to Use  
-Simply clone this repository and open the `index.html` file in your browser:  
-```sh
-git clone https://github.com/your-username/your-portfolio.git
-cd your-portfolio
-open index.html
-```
+
 
 ## 💡 Future Enhancements  
 - Adding animations for smoother UI interactions.  
@@ -40,4 +33,3 @@ open index.html
 
 ---
 
-Let me know if you want any modifications! 😊
