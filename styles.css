@@ -1,0 +1,422 @@
+/* General Styles */
+body {
+    background-color: #000;
+    color: #aab7b8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Highlighted Text */
+.highlight-yellow {
+    color: #d4af37; /* Gold/Yellow */
+    font-weight: bold;
+}
+
+/* Default White Text */
+.white-text {
+    color: white;
+}
+
+
+
+
+/* Main Container */
+.container {
+    display: flex;
+    max-width: 1200px;
+    padding: 50px 20px;
+}
+
+/* Left Section */
+.left-section {
+    width: 40%;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h1 {
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.highlight {
+    color: white;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* Navigation Links */
+.nav-links p {
+    border-top: 1px solid #555;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links span {
+    color: #555;
+    padding-right: 10px;
+}
+
+/* Right Section */
+.right-section {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.project-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.category {
+    color: #777;
+    font-size: 14px;
+}
+
+h3 {
+    color: white;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.description {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+    position: absolute;
+    bottom: 50px;
+    left: 170px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.social-logo {
+    width: 50px;  /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin-left: 50px;
+    display: inline-block;
+}
+.social-logo img {
+    width: 100%;  /* Ensures the image takes full size of the container */
+    height: auto; /* Maintains aspect ratio */
+}
+.social-icon {
+    font-size: 20px; /* Increased size for FontAwesome WhatsApp icon */
+    color: #25D366;
+    margin-left: 10px;
+}
+.project-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the tile */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2); /* Soft glow effect */
+}
+
+
+
+/* About Page Styles */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.about-frame {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    width: 60%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #aab7b8;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Applying Animations */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.slide-in {
+    animation: slideIn 1s ease-in-out;
+}
+
+
+
+
+
+/* Contact Page Styling */
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.contact-box {
+    background-color: rgba(255, 255, 255, 0.322);
+    color: black;
+    padding: 30px;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-box h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #aab7b8;
+    border-radius: 5px;
+    background-color: #000;
+    color: #aab7b8;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #aab7b8;
+    color: black;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    transform: scale(1.05);
+    background-color: white;
+    color: black;
+}
+
+/* Social Media Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    font-size: 30px;
+    color: #000;
+    background-color: #aab7b8;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    background-color: white;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #aab7b8;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Applying Animations */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.slide-in {
+    animation: slideIn 1s ease-in-out;
+}
+
+
+
+
+/* General Styles */
+body {
+    background-color: #000;
+    color: #aab7b8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('image.png'); /* Change path to your image */
+    background-size: cover; /* Makes the background cover the entire page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    max-width: 1200px;
+    padding: 50px 20px;
+    position: relative; /* Ensure content is placed over background */
+}
+
+/* Left Section */
+.left-section {
+    width: 40%;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Right Section */
+.right-section {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

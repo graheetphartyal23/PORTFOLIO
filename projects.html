@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <!-- Include Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fade-in Animation */
+        body {
+            opacity: 0;
+            animation: fadeInScreen 1s ease-in-out forwards;
+            background: url('bk.webp') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #aab7b8;
+            padding: 50px 0;
+            position: relative;
+        }
+
+        /* Dark Overlay for Readability */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+        /* Fade-in Keyframes */
+        @keyframes fadeInScreen {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Container */
+        .container {
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* Header Styles */
+        .header-title {
+            font-size: 42px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .header-title::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: #aab7b8;
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+        }
+
+        /* Header Description */
+.header-description {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #d9d9d9;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px; /* Added space between header and project section */
+}
+
+        
+
+        /* Project Cards */
+        .projects-section {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .projects-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1200px;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background-color: #222;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            flex: 1;
+            max-width: 45%;
+            text-align: left;
+            color: #d9d9d9;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Add hover effect for better interaction */
+        .project-card:hover {
+            transform: scale(1.03);
+        }
+
+        /* Project Title */
+        .project-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #f1c40f;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        /* Category Text */
+        .category {
+            font-size: 14px;
+            font-weight: bold;
+            color: #aab7b8;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Project Description */
+        .project-description {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #d9d9d9;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            background-color: #aab7b8;
+            padding: 10px 20px;
+            border-radius: 4px;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        /* Hover Effect on Buttons */
+        .btn:hover {
+            background-color: #5f6a6a;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 768px) {
+            .projects-row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project-card {
+                max-width: 90%;
+                padding: 20px;
+            }
+
+            .project-title {
+                font-size: 20px;
+            }
+
+            .category {
+                font-size: 13px;
+            }
+
+            .project-description {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1 class="header-title">My Projects</h1>
+            <p class="header-description">Here are some projects from my career and internships, showcasing my skills in web development, cloud architecture, and application design. They demonstrate my ability to build scalable and efficient solutions for real-world problems.</p>
+        </header>
+
+        <!-- Projects Section -->
+        <div class="projects-section">
+            <!-- Row 1 -->
+            <div class="projects-row">
+                <div class="project-card">
+                    <h2 class="project-title">Sanjeevani Aashray</h2>
+                    <p class="category">Hospital Resource & Ambulance Platform</p>
+                    <p class="project-description">
+                        A system for hospitals to update ICU beds, ventilators, oxygen availability, and ambulances, helping patients during emergencies.
+                    </p>
+                    <p><strong>Tech Used:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+                    <a href="https://github.com/graheetphartyal23/Sanjeevani-Aashray" target="_blank" class="btn">View on GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <h2 class="project-title">WebTech Portfolio Hub</h2>
+                    <p class="category">Interactive Developer Portfolio</p>
+                    <p class="project-description">
+                        A dynamic portfolio showcasing web development projects, interactive elements, and responsive UI.
+                    </p>
+                    <p><strong>Tech Used:</strong> HTML, CSS, JavaScript, GitHub Pages</p>
+                    <a href="https://github.com/graheetphartyal23/WebTech-Portfolio-Hub" target="_blank" class="btn">View on GitHub</a>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="projects-row">
+                <div class="project-card">
+                    <h2 class="project-title">AWS Cloud Deployment</h2>
+                    <p class="category">Three-Tier Architecture on AWS</p>
+                    <p class="project-description">
+                        Deployed a scalable web application using AWS services like EC2, S3, RDS, and Load Balancer.
+                    </p>
+                    <p><strong>Tech Used:</strong> AWS (VPC, EC2, S3, RDS, CloudWatch)</p>
+                    <a href="https://github.com/graheetphartyal23/Cloud-Project-AWS" target="_blank" class="btn">View on GitHub</a>
+                </div>
+
+                <div class="project-card">
+                    <h2 class="project-title">Expense Tracker</h2>
+                    <p class="category">Finance Management Tool</p>
+                    <p class="project-description">
+                        Tracks spending, manages budgets, and provides insights into financial habits.
+                    </p>
+                    <p><strong>Tech Used:</strong> Node.js, MongoDB, AWS, JavaScript</p>
+                    <a href="https://github.com/graheetphartyal23/Expense-Tracker" target="_blank" class="btn">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

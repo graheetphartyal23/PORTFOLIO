@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <style>
+
+body {
+    opacity: 0;
+    animation: fadeInScreen 1s ease-in-out forwards;
+    
+    /* Background Image */
+    background: url('bk.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+
+
+        /* Fade-in effect for the entire screen */
+        body {
+            opacity: 0;
+            animation: fadeInScreen 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeInScreen {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Slide-in effect for the left section text */
+        .left-section {
+            opacity: 0;
+            transform: translateX(-30px);
+            animation: slideInLeft 1s ease-out forwards;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Drop-in effect for project cards from the top */
+        .project-card {
+            opacity: 0;
+            transform: translateY(-50px);
+            animation: dropIn 0.6s ease-out forwards;
+        }
+
+        @keyframes dropIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Staggered animation delays for project cards */
+        .project-card:nth-child(1) { animation-delay: 1.2s; }
+        .project-card:nth-child(2) { animation-delay: 1.4s; }
+        .project-card:nth-child(3) { animation-delay: 1.6s; }
+        .project-card:nth-child(4) { animation-delay: 1.8s; }
+        .project-card:nth-child(5) { animation-delay: 2.0s; }
+        .project-card:nth-child(6) { animation-delay: 2.2s; }
+
+        /* Rise-up effect for footer icons */
+        .footer a {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: riseUp 0.8s ease-out forwards;
+        }
+
+        @keyframes riseUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Staggered animation for footer icons */
+        .footer a:nth-child(1) { animation-delay: 2.4s; }
+        .footer a:nth-child(2) { animation-delay: 2.6s; }
+        .footer a:nth-child(3) { animation-delay: 2.8s; }
+        .footer a:nth-child(4) { animation-delay: 3.0s; }
+        .footer a:nth-child(5) { animation-delay: 3.2s; }
+        .footer a:nth-child(6) { animation-delay: 3.4s; }
+
+        /* Smooth hover effect for project cards */
+        .project-card:hover {
+            transform: scale(1.05);
+            background-color: #1c1c1c;
+            color: #aab7b8;
+        }
+
+        .footer a:hover {
+            transform: scale(1.15);
+            color: #1db954;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <h1>Hello, I’m <br> Graheet Phartyal</h1>
+            <h1 class="white-text">Welcome to My <span class="highlight-yellow">Portfolio</span></h1>
+<p class="white-text">
+    I am a passionate <span class="highlight-yellow">Java Developer</span> and 
+    <span class="highlight-yellow">Web Engineer</span> with experience in cloud computing.
+</p>
+
+            <p>
+              3rd Year B.Tech CSE Student at UPES | Cloud Computing & Virtualization Enthusiast | Java & C Developer | AWS Certified | Passionate About Scalable & Innovative Solutions.
+            </p>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="project-card" onclick="window.location='about.html';">
+                <p class="category">KNOW</p>
+                <h3> <span class="highlight-yellow">About Me</span></h3>
+                <p class="description">I am a Computer Science Engineer specializing in software development, cloud computing and web technologies. Read more...</p>
+            </div>
+
+            <div class="project-card" onclick="window.location='GRAHEET PHARTYAL_Resume.pdf';">
+                <p class="category">FETCH</p>
+                <h3><span class="highlight-yellow">Resume</span></h3>
+                <p class="description">Click to view and download.</p>
+            </div>
+
+            <div class="project-card" onclick="window.location='education.html';">
+                <p class="category">LEARNED WHERE</p>
+                <h3><span class="highlight-yellow">Education</span></h3>
+                <p class="description">A glimpse into my educational journey.</p>
+            </div>
+
+            <div class="project-card" onclick="window.location='projects.html';">
+                <p class="category">WHAT I HAVE BUILT</p>
+                <h3><span class="highlight-yellow">Project</span></h3>
+                <p class="description">A showcase of my projects where I’ve turned ideas into real, working solutions.</p>
+            </div>
+
+            <div class="project-card" onclick="window.location='contact.html';">
+                <p class="category">WANT TO CONNECT?</p>
+                <h3><span class="highlight-yellow">Contact</span></h3>
+                <p class="description">Feel free to reach out if you want to connect, collaborate, or chat!</p>
+            </div>
+
+            <div class="project-card" onclick="window.location='experience.html';">
+                <p class="category">THE JOURNEY SO FAR</p>
+                <h3><span class="highlight-yellow">Experience</span></h3>
+                <p class="description">Hands-on experience in real-world projects, internships, and learning opportunities.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/graheetphartyal23" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/graheet-phartyal-b8953b2a6/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:phartyalgraheet23@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+        <a href="https://discord.com/graheetphartyal_23" target="_blank"><i class="fab fa-discord"></i></a>
+        <a href="https://www.hackerrank.com/profile/Graheet_106011" target="_blank"><i class="fab fa-hackerrank"></i></a>
+    </div>
+</body>
+</html>
